@@ -1,0 +1,210 @@
+@font-face {	font-family: "iconfont"; /* Project id 4653006 */	src: url('~@/static/fonts/iconfont.woff2') format('woff2'),	url('~@/static/fonts/iconfont.woff') format('woff'),	url('~@/static/fonts/iconfont.ttf') format('truetype');}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-withdrawalRecord:before {
+  content: "\e69f";
+}
+
+.icon-accountUpdateApp:before {
+  content: "\e618";
+}
+
+.icon-accountHitNewRobot:before {
+  content: "\eb62";
+}
+
+.icon-accountBindingApi:before {
+  content: "\e615";
+}
+
+.icon-toolOutsideDiskDown:before {
+  content: "\e6a9";
+}
+
+.icon-toolOutsideDiskUp:before {
+  content: "\e6af";
+}
+
+.icon-toolMTGoxMonitor:before {
+  content: "\e65f";
+}
+
+.icon-toolBlockChainBrowser:before {
+  content: "\e6da";
+}
+
+.icon-toolSentimentIndex:before {
+  content: "\e601";
+}
+
+.icon-toolOutsideDisk:before {
+  content: "\e614";
+}
+
+.icon-toolLargeDecrease:before {
+  content: "\e660";
+}
+
+.icon-toolLargeIncrease:before {
+  content: "\e661";
+}
+
+.icon-toolOutsidePrice:before {
+  content: "\e606";
+}
+
+.icon-toolStableCoin:before {
+  content: "\e60f";
+}
+
+.icon-toolCompanyHoldings:before {
+  content: "\ea1b";
+}
+
+.icon-forumPublish:before {
+  content: "\e608";
+}
+
+.icon-language:before {
+  content: "\e654";
+}
+
+.icon-accountCollect:before {
+  content: "\e634";
+}
+
+.icon-accountTeam:before {
+  content: "\e62f";
+}
+
+.icon-accountTrace:before {
+  content: "\e6b4";
+}
+
+.icon-accountForum:before {
+  content: "\e641";
+}
+
+.icon-quit:before {
+  content: "\e612";
+}
+
+.icon-accountTool:before {
+  content: "\e624";
+}
+
+.icon-accountMemberItem3:before {
+  content: "\e65e";
+}
+
+.icon-accountMemberItem2:before {
+  content: "\e672";
+}
+
+.icon-accountMemberItem5:before {
+  content: "\e605";
+}
+
+.icon-accountMemberItem1:before {
+  content: "\eaef";
+}
+
+.icon-tianjia:before {
+  content: "\e60b";
+}
+
+.icon-copy:before {
+  content: "\e8b0";
+}
+
+.icon-platformDetailsFacebook:before {
+  content: "\e6e5";
+}
+
+.icon-platformDetailsQihuo:before {
+  content: "\e63a";
+}
+
+.icon-platformDetailsTelegram:before {
+  content: "\e8db";
+}
+
+.icon-platformDetailsChangwai:before {
+  content: "\e65b";
+}
+
+.icon-platformDetailsFabi:before {
+  content: "\e600";
+}
+
+.icon-platformDetailsReddit:before {
+  content: "\e60e";
+}
+
+.icon-platformDetailsTwitter:before {
+  content: "\ea90";
+}
+
+.icon-platformDetailsXianhuo:before {
+  content: "\ea1a";
+}
+
+.icon-shareFacebook:before {
+  content: "\e64e";
+}
+
+.icon-shareWhatsapp:before {
+  content: "\ea07";
+}
+
+.icon-shareTwitter:before {
+  content: "\e629";
+}
+
+.icon-shareTelegram:before {
+  content: "\e60c";
+}
+
+.icon-laohuji:before {
+  content: "\e647";
+}
+
+.icon-listSort:before {
+  content: "\e65c";
+}
+
+.icon-listSortAsc:before {
+  content: "\e67f";
+}
+
+.icon-listSortDesc:before {
+  content: "\e680";
+}
+
+.icon-navFooterAccount:before {
+  content: "\e625";
+}
+
+.icon-navFooterConsulting:before {
+  content: "\e630";
+}
+
+.icon-navFooterHome:before {
+  content: "\e607";
+}
+
+.icon-navFooterPublicChain:before {
+  content: "\eaee";
+}
+
+.icon-navFooterInscription:before {
+  content: "\e703";
+}
+
