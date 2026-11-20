@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": false,// 严格模式
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    "skipLibCheck": true,// 跳过.d.ts文件的类型检查
+    "forceConsistentCasingInFileNames": true,// 强制一致的文件名大小写
+    
+    "outDir": "./dist", // 输出目录
+    "rootDir": "./src", // 根目录
+    "emitDecoratorMetadata": true, // 启用装饰器元数据的生成。
+    "experimentalDecorators": true, // 启用实验性的装饰器支持。
+    "esModuleInterop": true, // 允许从没有设置默认导出的模块中默认导入。
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。
+    "sourceMap": true, // 生成相应的 .map 文件。
+    "resolveJsonModule": true, // 让 TypeScript 将.json 文件视为模块。
+  },
+  "exclude": ["node_modules"]
+}
