@@ -1,0 +1,26 @@
+export default {
+	common: {
+		loadingText: 'Loading...',
+		nomoreText: 'No more',
+		copySuccess: 'Copy successful',
+		sendSuccess: 'Send successful! ',
+		confirmText: 'Confirm',
+		cancelText: 'Cancel',
+		empty: "No data yet",
+		appUpDataBtn: 'Update',
+		appUpDataTitle: 'To optimize the experience, please download the latest version',
+		appUpDataContentResource: 'There is a new resource package that needs to be updated',
+		appUpDataContentVersion: 'There is a new version that needs to be updated',
+		appUpDataSuccess: 'Update completed, app will restart soon!',
+		expand1: 'Expand',
+		expand2: 'Collapse',
+		confirm: "Confirm",
+		cancel: "Cancel",
+		confirmDelete: "Confirm deletion",
+		deleteConfirm: "Are you sure you want to delete this content?",
+		deleteSuccess: "Deleted successfully",
+		deleteFail: "Failed to delete",
+		uploadSuccess: 'Upload successful',
+		uploadFail: 'Upload failed'
+	},
+}

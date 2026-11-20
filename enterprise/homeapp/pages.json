@@ -1,0 +1,640 @@
+{
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText":"企业联盟"
+			}
+		},
+		{
+			"path": "pages/home/search",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText":"搜索"
+
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "个人中心"
+			}
+		}, 
+		{
+			"path": "pages/my/version"
+		},
+		{
+			"path": "pages/user/login",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "用户登录"
+			}
+		},
+		{
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/user/forgotPassword",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		{
+			"path": "pages/user/cutImage/cut",
+			"style": {
+				"navigationStyle":"custom", 
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/my/set",
+			"style": { 
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/my/editUser",
+			"style": {
+				"navigationBarTitleText": "编辑资料"
+			}
+		},
+		{
+			"path": "pages/my/changePassword",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/my/changeEmail",
+			"style": {
+				"navigationBarTitleText": "修改邮箱"
+			}
+		},
+		{
+			"path" : "pages/my/following",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/my/follower",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/service/list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务"
+			}
+		},
+		{
+			"path" : "pages/entity/add",
+			"style" : 
+			{
+				"navigationBarTitleText" : "添加"
+			}
+		},
+		{
+			"path" : "pages/entity/invite",
+			"style" : 
+			{
+				"navigationBarTitleText" : "邀请码"
+			}
+		},
+		{
+			"path" : "pages/service/category",
+			"style" : 
+			{
+				"navigationBarTitleText" : "所有服务"
+			}
+		},
+		{
+			"path" : "pages/msg/msg",
+			"style" : 
+			{
+				"navigationBarTitleText" : "消息中心"
+			}
+		},
+		{
+			"path" : "pages/discover/discover",
+			"style" : 
+			{
+				"navigationBarTitleText" : "发现"
+			}
+		},
+		{
+			"path" : "pages/entity/list",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/provider/addService",
+			"style" : 
+			{
+				"navigationBarTitleText" : "发布服务"
+			}
+		},
+		{
+			"path" : "pages/entity/auth",
+			"style" : 
+			{
+				"navigationBarTitleText" : "实名认证"
+			}
+		},
+		{
+			"path" : "pages/entity/review",
+			"style" : 
+			{
+				"navigationBarTitleText" : "审核资料"
+			}
+		},		
+		{
+			"path" : "pages/provider/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务商主页"
+			}
+		},
+		{
+			"path" : "pages/company/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "企业主页"
+			}
+		},		
+		{
+			"path" : "pages/enterprise/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "企业主页"
+			}
+		},
+		{
+			"path": "pages/enterprise/banner_manage",
+			"style": { "navigationBarTitleText": "轮播图管理" }
+		  },
+		  {
+			"path": "pages/enterprise/about_manage",
+			"style": { "navigationBarTitleText": "关于我们管理" }
+		  },
+		  {
+			"path": "pages/enterprise/contact_manage",
+			"style": { "navigationBarTitleText": "联系我们管理" }
+		  },
+		  {
+			"path": "pages/enterprise/product_manage",
+			"style": { "navigationBarTitleText": "产品管理" }
+		  },
+		  {
+			"path": "pages/enterprise/article_manage",
+			"style": { "navigationBarTitleText": "文章管理" }
+		  },
+		  {
+			"path": "pages/enterprise/case_manage",
+			"style": { "navigationBarTitleText": "案例管理" }
+		  },
+		  {
+			"path": "pages/enterprise/settings_manage",
+			"style": { "navigationBarTitleText": "企业主页设置" }
+		  },
+		{
+			"path" : "pages/entity/edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "编辑企业资料"
+			}
+		},
+		{
+			"path" : "pages/provider/list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务列表"
+			}
+		},
+		{
+			"path" : "pages/provider/mylist",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务管理"
+			}
+		},
+		{
+			"path" : "pages/service/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务详情"
+			}
+		},
+		{
+			"path" : "pages/order/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "订单详细"
+			}
+		},
+		{
+			"path" : "pages/order/create",
+			"style" : 
+			{
+				"navigationBarTitleText" : "创建订单"
+			}
+		},
+		{
+			"path" : "pages/order/list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "订单列表"
+			}
+		},
+		{
+			"path" : "pages/order/pay",
+			"style" : 
+			{
+				"navigationBarTitleText" : "支付订单"
+			}
+		},
+		{
+			"path" : "pages/order/ok",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/serviceFlow/track",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务跟踪"
+			}
+		},
+		{
+			"path" : "pages/invoices/edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "编辑发票"
+			}
+		},
+		{
+			"path" : "pages/invoices/select",
+			"style" : 
+			{
+				"navigationBarTitleText" : "发票管理"
+			}
+		},
+		{
+			"path" : "pages/association/list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务管理"
+			}
+		},
+		{
+			"path" : "pages/association/audit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务审核"
+			}
+		},
+		{
+			"path" : "pages/my/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/my/my_market",
+			"style" : 
+			{
+				"navigationBarTitleText" : "经纪人中心"
+			}
+		},
+		{
+			"path" : "pages/enterprise/product_edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "产品编辑"
+			}
+		},
+		{
+			"path" : "pages/enterprise/article_edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "文章编辑"
+			}
+		},
+		{
+			"path" : "pages/enterprise/case_edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "案例编辑"
+			}
+		},
+		{
+			"path" : "pages/company/news",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新闻"
+			}
+		},
+		{
+			"path" : "pages/company/products",
+			"style" : 
+			{
+				"navigationBarTitleText" : "产品"
+			}
+		},
+		{
+			"path" : "pages/company/case",
+			"style" : 
+			{
+				"navigationBarTitleText" : "案例"
+			}
+		},
+		{
+			"path" : "pages/company/contact",
+			"style" : 
+			{
+				"navigationBarTitleText" : "联系我们"
+			}
+		},
+		{
+			"path" : "pages/company/product_detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},	
+		{
+			"path" : "pages/company/case_detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/company/news_detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/company/about",
+			"style" : 
+			{
+				"navigationBarTitleText" : "关于我们"
+			}
+		},
+		{
+			"path" : "pages/home/qylist",
+			"style" : 
+			{
+				"navigationBarTitleText" : "企业库",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"backgroundColor": "#f5f5f5"
+			}
+		},
+		{
+			"path" : "pages/msg/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "消息详情"
+			}
+		},
+		{
+			"path" : "pages/msg/consultation",
+			"style" : 
+			{
+				"navigationBarTitleText" : "问题咨询"
+			}
+		},
+		{
+			"path" : "pages/chat/chat",
+			"style" : 
+			{
+				"navigationStyle":"custom",
+				"navigationBarTitleText" : "聊天"
+			}
+		},
+		{
+			"path" : "pages/chat/group_set",
+			"style" : 
+			{
+				"navigationBarTitleText" : "群设置"
+			}
+		},
+		{
+			"path" : "pages/chat/edit_group",
+			"style" : 
+			{
+				"navigationBarTitleText" : "资料编辑"
+			}
+		},
+		{
+			"path" : "pages/chat/manage_members",
+			"style" : 
+			{
+				"navigationBarTitleText" : "成员管理"
+			}
+		},
+		{
+			"path" : "pages/msg/pending",
+			"style" : 
+			{
+				"navigationBarTitleText" : "待办事项"
+			}
+		},
+		{
+			"path" : "pages/msg/audit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "审批通知"
+			}
+		},
+		{
+			"path" : "pages/msg/notice",
+			"style" : 
+			{
+				"navigationBarTitleText" : "系统公告"
+			}
+		},
+		{
+			"path" : "pages/msg/contacts",
+			"style" : 
+			{
+				"navigationBarTitleText" : "企业通讯录"
+			}
+		},
+		{
+			"path" : "pages/msg/create-group",
+			"style" : 
+			{
+				"navigationBarTitleText" : "创建群组"
+			}
+		},
+		{
+			"path" : "pages/msg/join-group",
+			"style" : 
+			{
+				"navigationBarTitleText" : "加入群组"
+			}
+		},		
+		{
+			"path" : "pages/demand/add",
+			"style" : 
+			{
+				"navigationStyle":"default",
+				"navigationBarTitleText" : "需求发布"
+			}
+		}, 
+		{
+			"path" : "pages/demand/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "需求详情"
+			}
+		},
+		{
+			"path" : "pages/demand/mydemand",
+			"style" : 
+			{
+				"navigationStyle":"default",
+				"navigationBarTitleText" : "我的发布"
+			}
+		},
+		{
+			"path" : "pages/demand/list",
+			"style" : 
+			{
+				"navigationStyle": "default",
+				"navigationBarTitleText" : "广场-需求|求购|货物|服务|易货"
+			}
+		},
+		{
+			"path" : "pages/market/client_list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "客户管理"
+			}
+		},		
+		{
+			"path" : "pages/market/need_list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "需求跟进"
+			}
+		},
+		{
+			"path" : "pages/market/need_detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "需求详情"
+			}
+		},
+		{
+			"path" : "pages/market/task_list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "待办事项"
+			}
+		},		
+		{
+			"path" : "pages/market/data_analysis",
+			"style" : 
+			{
+				"navigationBarTitleText" : "数据分析"
+			}
+		},
+		{
+			"path" : "pages/market/history",
+			"style" : 
+			{
+				"navigationBarTitleText" : "浏览记录"
+			}
+		},
+		{
+			"path" : "pages/market/myteams",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的团队"
+			}
+		},
+		{
+			"path" : "pages/home/newslist",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/provider/order",
+			"style" : 
+			{
+				"navigationBarTitleText" : "服务订单"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "企业联盟",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#333",
+		"selectedColor": "#3D6AFF",
+		"backgroundColor": "#fcfcfc",
+		
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/static/menu/home.png",
+				"selectedIconPath": "/static/menu/home2.png"
+			},
+			{
+				"pagePath": "pages/service/list",
+				"text": "服务",
+				"iconPath": "/static/menu/serv.png",
+				"selectedIconPath": "/static/menu/serv2.png"
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"text": "消息",
+				"iconPath": "/static/menu/msg.png",
+				"selectedIconPath": "/static/menu/msg2.png"
+			},
+			{
+				"pagePath": "pages/demand/list",
+				"text": "广场",
+				"iconPath": "/static/menu/find.png",
+				"selectedIconPath": "/static/menu/find2.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/static/menu/user.png",
+				"selectedIconPath": "/static/menu/user2.png"
+			}
+		]
+	},
+	"uniIdRouter": {},
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	}
+}

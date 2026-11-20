@@ -1,0 +1,26 @@
+export default {
+	common: {
+		loadingText: '正在載入中...',
+		nomoreText: '沒有更多了',
+		copySuccess: '複製成功',
+		sendSuccess: '發送成功！ ',
+		confirmText: '確認',
+		cancelText: '取消',
+		empty: "暫無資料",
+		appUpDataBtn: '更新',
+		appUpDataTitle: '為了優化體驗，請下載最新版本。',
+		appUpDataContentResource: '有新資源包需要更新',
+		appUpDataContentVersion: '有新版本需要更新',
+		appUpDataSuccess: '更新完成，即將重啓APP！',
+		expand1: '展開',
+		expand2: '收起',
+		confirm: '確認',
+		cancel: '取消',
+		confirmDelete: '確認刪除',
+		deleteConfirm: '確認刪除該內容嗎？',
+		deleteSuccess: '刪除成功',
+		deleteFail: '刪除失敗',
+		uploadSuccess: '上傳成功',
+		uploadFail: '上傳失敗'
+	},
+}

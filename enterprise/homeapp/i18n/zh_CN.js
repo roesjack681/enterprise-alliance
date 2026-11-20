@@ -1,0 +1,27 @@
+export default {
+	common: {
+		loadingText: '正在加载中...',
+		nomoreText: '没有更多了',
+		copySuccess: '复制成功',
+		sendSuccess: '发送成功！',
+		confirmText: '确认',
+		cancelText: '取消',
+		empty: "暂无数据",
+		appUpDataBtn: '更新',
+		appUpDataTitle: '为了优化体验，请下载最新版本。',
+		appUpDataContentResource: '有新资源包需要更新',
+		appUpDataContentVersion: '有新版本需要更新',
+		appUpDataSuccess: '更新完成，即将重启APP！',
+		expand1: '展开',
+		expand2: '收起', 
+		confirm: '确认',
+		cancel: '取消',
+		confirmDelete: '确认删除',
+		deleteConfirm: '确认删除该内容吗？',
+		deleteSuccess: '删除成功',
+		deleteFail: '删除失败',
+		uploadSuccess: '上传成功',
+		uploadFail: '上传失败',
+	},
+	
+}
