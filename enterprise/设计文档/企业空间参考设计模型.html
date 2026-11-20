@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业空间</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f6fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 375px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .settings-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .enterprise-info {
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .company-details h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        
+        .company-details p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .main-content {
+            padding: 20px;
+        }
+        
+        .section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .service-card.new::after {
+            content: 'NEW';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #ff4757;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        .finance-icon { background: #e8f4fd; color: #1e88e5; }
+        .hr-icon { background: #f3e5f5; color: #8e24aa; }
+        .business-icon { background: #e8f5e8; color: #43a047; }
+        .ip-icon { background: #fff3e0; color: #ff9800; }
+        .tech-icon { background: #e3f2fd; color: #2196f3; }
+        .digital-icon { background: #f1f8e9; color: #689f38; }
+        .consult-icon { background: #fce4ec; color: #e91e63; }
+        .legal-icon { background: #f3e5f5; color: #9c27b0; }
+        
+        .service-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #333;
+        }
+        
+        .service-desc {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .recent-activity {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-icon {
+            width: 32px;
+            height: 32px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-title {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .activity-time {
+            font-size: 11px;
+            color: #999;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 375px;
+            background: white;
+            border-top: 1px solid #eee;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            color: #999;
+            font-size: 10px;
+        }
+        
+        .nav-item.active {
+            color: #667eea;
+        }
+        
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <button class="back-btn">←</button>
+                <div class="header-title">企业空间</div>
+                <button class="settings-btn">⚙</button>
+            </div>
+            
+            <div class="enterprise-info">
+                <div class="company-logo">科</div>
+                <div class="company-details">
+                    <h3>深圳科技创新有限公司</h3>
+                    <p>高新技术企业 • 成立3年</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">进行中服务</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">已完成项目</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">满意度</div>
+                </div>
+            </div>
+            
+            <!-- Professional Services -->
+            <div class="section">
+                <div class="section-title">专业服务对接</div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon finance-icon">💰</div>
+                        <div class="service-title">财税服务</div>
+                        <div class="service-desc">代理记账、税务筹划、审计服务</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon hr-icon">👥</div>
+                        <div class="service-title">HR服务</div>
+                        <div class="service-desc">招聘外包、薪酬管理、员工培训</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon business-icon">🏢</div>
+                        <div class="service-title">工商服务</div>
+                        <div class="service-desc">公司注册、变更登记、年检代办</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon ip-icon">⚖️</div>
+                        <div class="service-title">知识产权</div>
+                        <div class="service-desc">商标注册、专利申请、版权保护</div>
+                    </div>
+                    
+                    <div class="service-card new">
+                        <div class="service-icon tech-icon">🚀</div>
+                        <div class="service-title">科技创新</div>
+                        <div class="service-desc">项目申报、创新辅导、技术转移</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon digital-icon">💻</div>
+                        <div class="service-title">数字化服务</div>
+                        <div class="service-desc">IT系统、云服务、数字化转型</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon consult-icon">📊</div>
+                        <div class="service-title">创业辅导</div>
+                        <div class="service-desc">商业计划、运营指导、投融资</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon legal-icon">📋</div>
+                        <div class="service-title">法律服务</div>
+                        <div class="service-desc">合同审查、法律咨询、合规指导</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="section">
+                <div class="section-title">最近动态</div>
+                <div class="recent-activity">
+                    <div class="activity-item">
+                        <div class="activity-icon">✅</div>
+                        <div class="activity-content">
+                            <div class="activity-title">商标注册申请已提交</div>
+                            <div class="activity-time">2小时前</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">📊</div>
+                        <div class="activity-content">
+                            <div class="activity-title">月度财务报表已生成</div>
+                            <div class="activity-time">1天前</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">👨‍💼</div>
+                        <div class="activity-content">
+                            <div class="activity-title">新员工入职手续办理完成</div>
+                            <div class="activity-time">3天前</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="#" class="nav-item">
+                <div class="nav-icon">🏠</div>
+                <span>首页</span>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="nav-icon">📋</div>
+                <span>政策法规</span>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="nav-icon">📝</div>
+                <span>办事</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <div class="nav-icon">🏢</div>
+                <span>企业空间</span>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <span>个人中心</span>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // 服务卡片点击事件
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('.service-title').textContent;
+                alert(`点击了${title}服务，即将跳转到服务详情页面`);
+            });
+        });
+        
+        // 统计卡片点击事件
+        document.querySelectorAll('.stat-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const label = this.querySelector('.stat-label').textContent;
+                alert(`查看${label}详情`);
+            });
+        });
+        
+        // 活动项点击事件
+        document.querySelectorAll('.activity-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('.activity-title').textContent;
+                alert(`查看活动详情：${title}`);
+            });
+        });
+    </script>
+</body>
+</html>
